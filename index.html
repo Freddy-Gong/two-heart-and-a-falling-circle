@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: boreder-box;
+        }
+
+        .heart {
+            margin-top: 20%;
+            margin-left: 50%;
+            position: relative;
+            display: inline-block;
+            transition: all .5s;
+        }
+
+        .heart:hover {
+            transform: scale(1.5)
+        }
+
+        .left {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            transform: rotate(45deg) translatex(30px);
+            right: 100%;
+            bottom: 100%;
+            border-radius: 50% 0 0 50%;
+            background: red;
+        }
+
+        .right {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            bottom: 100%;
+            left: 100%;
+            transform: rotate(45deg) translatey(30px);
+            border-radius: 50% 50% 0 0;
+            background: red;
+        }
+
+        .meddle {
+            width: 50px;
+            height: 50px;
+            transform: rotate(45deg);
+            background: red;
+        }
+
+        .注解 {
+            margin-top: 5%;
+            margin-left: 47.5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heart">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="meddle"></div>
+    </div>
+    <div class="注解">请把鼠标移到红心上</div>
+
+</body>
+
+</html>
